@@ -4,3 +4,7 @@ def greet(name):
 
 def farewell(name):
     return f"До свидания, {name}!"
+
+
+def get_name_length(name):
+    return len(name)
