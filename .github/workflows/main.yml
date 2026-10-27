@@ -19,3 +19,9 @@ jobs:
 
       - name: Run unit tests
         run: python -m unittest discover -v
+      
+      - name: Generate documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-documentation
+          path: docs/index.html
