@@ -11,3 +11,8 @@ def farewell(name):
 def get_name_length(name):
     """Возвращает количество символов в имени пользователя"""
     return len(name)
+
+
+def get_initials(name, surname):
+    """Возвращает инициалы пользователя по имени и отчеству"""
+    return f"{name[0].upper()}.{surname[0].upper()}."
