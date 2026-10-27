@@ -1,5 +1,5 @@
 import unittest
-from utils import greet, farewell, get_name_length
+from utils import greet, farewell, get_name_length, get_initials
 
 
 class TestUtils(unittest.TestCase):
@@ -14,6 +14,9 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(get_name_length("Маргарита"), 9)
         self.assertEqual(get_name_length("Анна"), 4)
         self.assertEqual(get_name_length(""), 0)
+        
+    def test_get_initials(self):
+        self.assertEqual(get_initials("Маргарита", "Валерьевна"), "М.В.")
 
 
 if __name__ == "__main__":
